@@ -26,7 +26,7 @@ fn solve_part1(lines: &Vec<String>) -> i32 {
         }
     }
     let negative_counts: Vec<i32> = counts.iter().map(|count| -count).collect();
-    
+
     counts_as_binary(&counts) * counts_as_binary(&negative_counts)
 }
 
@@ -73,6 +73,6 @@ fn count_ones_at_column(lines: &Vec<String>, column: usize) -> i32 {
             count += 1;
         }
     }
-    
+
     count
 }

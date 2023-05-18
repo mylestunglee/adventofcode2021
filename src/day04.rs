@@ -44,7 +44,7 @@ fn parse_grid(grid_data: &str) -> Grid {
             result.insert(cell, (column, row));
         }
     }
-    
+
     result
 }
 

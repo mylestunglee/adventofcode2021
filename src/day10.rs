@@ -35,7 +35,7 @@ fn syntax_error_score(line: &String) -> i32 {
             // incomplete
             break;
         } else if chunk_symbols[opened_chunks.last().unwrap()] == symbol {
-            opened_chunks.truncate(opened_chunks.len() - 1);        
+            opened_chunks.truncate(opened_chunks.len() - 1);
         } else {
             return score[&symbol];
         }
@@ -64,7 +64,7 @@ fn autocomplete_score(line: &String) -> i64 {
             // incomplete
             break;
         } else if chunk_symbols[opened_chunks.last().unwrap()] == symbol {
-            opened_chunks.truncate(opened_chunks.len() - 1);        
+            opened_chunks.truncate(opened_chunks.len() - 1);
         } else {
             // syntax error
             return 0;

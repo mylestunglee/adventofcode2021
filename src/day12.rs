@@ -56,7 +56,7 @@ fn traverse(
     if curr_node == "end" {
         return 1;
     }
-        
+
     if !is_big_cave(curr_node) && curr_visited.contains(curr_node) && curr_double_visited.is_some() {
         return 0;
     }

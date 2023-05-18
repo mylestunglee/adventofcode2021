@@ -95,7 +95,7 @@ fn flash_energized_recursive(puzzle_input: &mut PuzzleInput, (x, y): Point) -> u
                 && 0 <= grid_y
                 && grid_y < puzzle_input.height as i32
                 && !(offset_x == 0 && offset_y == 0) {
-                
+
                 if puzzle_input.grid[grid_y as usize][grid_x as usize] != FLASHED_ENERGY {
                     puzzle_input.grid[grid_y as usize][grid_x as usize] += 1;
                     if puzzle_input.grid[grid_y as usize][grid_x as usize] >= MAX_ENERGY {

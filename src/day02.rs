@@ -13,7 +13,7 @@ fn main() {
             Instruction {direction: String::from(tokens[0]), distance: tokens[1].parse().unwrap()}
         })
         .collect();
-    
+
     println!("part1={}", solve_part1(&instructions));
     println!("part2={}", solve_part2(&instructions));
 }
